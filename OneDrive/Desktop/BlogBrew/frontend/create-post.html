@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Blog | BlogBrew</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="./assets/BlogBrew logo.png" alt="BlogBrew Logo" class="logo-img" />
+      <span class="brand-text">BlogBrew</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="auth.html" id="auth-link">Logout</a>
+    </div>
+  </nav>
+
+  <section class="form-container">
+    <h1>Create a New Blog Post</h1>
+    <form id="create-post-form">
+      <input type="text" id="title" placeholder="Blog Title" required />
+      <textarea id="content" placeholder="Write your thoughts..." rows="8" required></textarea>
+      <input type="text" id="imageUrl" placeholder="Image URL (optional)" />
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="tech">Tech</option>
+        <option value="lifestyle">Lifestyle</option>
+        <option value="travel">Travel</option>
+      </select>
+      <button type="submit">Publish</button>
+    </form>
+  </section>
+
+  <script src="./js/create.js" defer></script>
+</body>
+</html>

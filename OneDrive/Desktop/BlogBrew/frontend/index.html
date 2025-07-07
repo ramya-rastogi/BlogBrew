@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogBrew | Home</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- 🔝 NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="./assets/BlogBrew logo.png" alt="BlogBrew Logo" class="logo-img" />
+      <span class="brand-text">BlogBrew</span>
+    </div>
+    <div class="nav-links">
+      <a href="create-post.html" id="create-link">Create</a>
+      <a href="auth.html" id="auth-link">Login</a>
+    </div>
+  </nav>
+
+  <!-- ☕ HERO -->
+  <header class="hero">
+    <h1>Welcome to BlogBrew</h1>
+    <p class="tagline">Brew it slow. Share it warm.</p>
+  </header>
+
+  <!-- 🔍 SEARCH & FILTER -->
+  <section class="search-filter">
+    <input type="text" placeholder="Search blogs..." id="search-input" />
+    <select id="category-filter">
+      <option value="">All Categories</option>
+      <option value="tech">Tech</option>
+      <option value="lifestyle">Lifestyle</option>
+      <option value="travel">Travel</option>
+    </select>
+  </section>
+
+  <!-- 🌟 FEATURED BLOG -->
+  <section class="featured-blog">
+    <h2>Blog of the Week</h2>
+    <div class="featured-card">
+      <img src="https://placehold.co/600x300" alt="Featured Blog" />
+      <div class="featured-content">
+        <h3>THE SILENCE BETWEEN NOTES</h3>
+        <p>
+          So much living happens in the spaces we don't fill.
+          We rush through days filled with constant noise
+          of words, plans and demands...
+          <br />
+          <button class="read-more" onclick="window.location.href='blog.html?id=1'">Read More</button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📚 BLOG GRID -->
+  <section class="blog-grid">
+    <h2>Recent Posts</h2>
+    <div class="grid" id="blog-grid">
+      <!-- Blog cards will be injected via blog.js -->
+    </div>
+  </section>
+
+  <script src="./js/blog.js" defer></script>
+</body>
+</html>
